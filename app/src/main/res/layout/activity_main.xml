@@ -10,6 +10,7 @@
     android:gravity="center">
 
    <Button
+       android:onClick="decrementScore"
        android:layout_width="match_parent"
        android:layout_height="100dp"
        android:text="-"
@@ -30,6 +31,7 @@
        />
 
    <Button
+       android:onClick="incrementScore"
        android:layout_width="match_parent"
        android:layout_height="100dp"
        android:text="+"
