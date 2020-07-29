@@ -10,6 +10,7 @@
     android:gravity="center">
 
    <Button
+       android:layout_weight="1"
        android:onClick="decrementScore"
        android:layout_width="match_parent"
        android:layout_height="100dp"
@@ -21,17 +22,19 @@
        />
 
    <TextView
+       android:layout_weight="8"
        android:id="@+id/result"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:text="0"
        android:textStyle="bold"
        android:textColor="#243DCA"
-       android:gravity="center_horizontal"
+       android:gravity="center"
        android:textSize="100sp"
        />
 
    <Button
+       android:layout_weight="1"
        android:onClick="incrementScore"
        android:layout_width="match_parent"
        android:layout_height="100dp"
