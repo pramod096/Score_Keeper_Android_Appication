@@ -11,12 +11,12 @@
        android:layout_width="match_parent"
        android:layout_height="100dp"
        android:text="-"
-       android:textSize="60sp"
+       android:textSize="65sp"
        android:textColor="#FFFFFF"
        android:background="#DD0909"
        android:textStyle="bold"
        />
 
-   
+
 
 </LinearLayout>
