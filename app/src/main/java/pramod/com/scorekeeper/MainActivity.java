@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tv;
+    private TextView tv = null;
     private int count = 0;
 
     @Override
@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
     public void decrementScore(View view) {
         Toast.makeText(this, "Decrement is Pressed", Toast.LENGTH_SHORT).show();
         count--;
-        tv.setText(count);
+        tv.setText(String.valueOf(count));
     }
 
     public void incrementScore(View view) {
         Toast.makeText(this, "Increment is Pressed", Toast.LENGTH_SHORT).show();
         count++;
-        tv.setText(count);
+        tv.setText(String.valueOf(count));
     }
 }
