@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv = findViewById(R.id.result);
+        if(savedInstanceState!=null){
+            count = savedInstanceState.getInt("KEY");
+            tv.setText(String.valueOf(count));
+        }
     }
 
     public void decrementScore(View view) {
@@ -33,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-        super.onSaveInstanceState(outState);
-        outState.putInt("KEY", count);
+    protected void onSaveInstanceState(@NonNull Bundle out) {
+        super.onSaveInstanceState(out);
+        out.putInt("KEY", count);
     }
 }
