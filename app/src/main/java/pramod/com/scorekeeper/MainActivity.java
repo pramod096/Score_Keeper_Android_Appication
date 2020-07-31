@@ -1,5 +1,6 @@
 package pramod.com.scorekeeper;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -29,5 +30,11 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "Increment is Pressed", Toast.LENGTH_SHORT).show();
         count++;
         tv.setText(String.valueOf(count));
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("KEY", count);
     }
 }
